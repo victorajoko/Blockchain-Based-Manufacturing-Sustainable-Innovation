@@ -1,0 +1,24 @@
+[project]
+name = 'Blockchain-Based-Manufacturing-Sustainable-Innovation'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.pilot-implmentation]
+path = 'contracts/pilot-implmentation.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.technology-assesment]
+path = 'contracts/technology-assesment.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
